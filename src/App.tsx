@@ -3,7 +3,7 @@ import './App.css';
 import Home from './pages/home';
 import Sobre from './pages/sobre';
 import Galeria from './pages/galeria';
-import FormularioCadastro from './components/formularioCadastro';
+import ComponenteExemplo from './components/componenteExemplo';
 
 function App() {
   const [PaginaAtual, setPaginaAtual] = useState(Home) // #########
@@ -22,7 +22,7 @@ function App() {
         <a className="page-link" onClick={irParaSobre}>Sobre</a>
       </div>
       {PaginaAtual}
-      <FormularioCadastro/>
+      <ComponenteExemplo conteudo="Conteúdo de exemplo" />
     </>
   )
 }
